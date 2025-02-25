@@ -1,0 +1,61 @@
+/* Chart container with responsive styling */
+.chart-container {
+  width: 100%; /* Full width to allow better responsiveness */
+  max-width: 400px; /* Set a max width to keep it compact */
+  margin: 0 auto; /* Center the container */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+.chart-header {
+  font-size: 1.2rem; /* Smaller font for compact view */
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Chart wrapper to prevent overflow */
+.chart {
+  width: 100%;
+  max-width: 100%; /* Prevent overflow beyond the container */
+  height: 200px; /* Adjust height as needed */
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  .chart-container {
+      max-width: 90%; /* Allow more width on smaller screens */
+      padding: 8px; /* Reduce padding for compactness */
+  }
+
+  .chart-header {
+      font-size: 1rem; /* Smaller font for smaller screens */
+  }
+
+  .chart {
+      height: 150px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Responsive adjustments for very small devices (e.g., phones) */
+@media (max-width: 480px) {
+  .chart-container {
+      max-width: 100%; /* Use full width on very small screens */
+      padding: 5px; /* Minimal padding */
+  }
+
+  .chart-header {
+      font-size: 0.9rem; /* Even smaller font for very small screens */
+  }
+
+  .chart {
+      height: 120px; /* Further reduce height for very small screens */
+  }
+}
